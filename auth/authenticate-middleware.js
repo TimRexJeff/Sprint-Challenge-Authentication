@@ -19,6 +19,7 @@ module.exports = (req, res, next) => {
     })
 
   } else {
-    res.status(401).json({ how: 'dare you try that at MY house. Just no.' })
+    res.status(401)
+    .json({ how: 'dare you try that at MY house. Just no.' })
   }
 }
